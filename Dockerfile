@@ -4,6 +4,7 @@ USER root
 
 # overwrite the default config with our modified copy
 COPY shiny-server.conf /etc/shiny-server/shiny-server.conf 
+RUN chmod 777 /etc/shiny-server/shiny-server.conf
 
 RUN apt-get update
 
